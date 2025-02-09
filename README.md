@@ -29,13 +29,7 @@ The pollution data were combined into one table, health data combined into anoth
 
 
 ### Database: `air_quality_analysis`
-We have structured the database into **three main tables**:
 
-| Table Name               | Description |
-|--------------------------|-------------|
-| `pollution_data`         | Merges all air quality tables |
-| `health_impact_data`     | Combines hospital and emergency visits |
-| `final_combined_data`    | Joins pollution and health impact data |
 
 
 
