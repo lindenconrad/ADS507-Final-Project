@@ -27,9 +27,8 @@ The database consists of multiple tables containing pollution data and health da
 | 'asthma-emergency-2015_2022'        | asthma ER visits                            |
 | 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations                     |
 
-The pollution data were combined into one table, health data combined into another table, and one final table was created.
+The pollution data were combined into one table each, health data combined into another table, and one final table is in the process of being created.
 
-PM_data is in the process of being created. We are running into some issues with creating the new table and misaligning the number of columns. 
 
 ### Database: `air_quality_analysis`
 
@@ -49,10 +48,8 @@ Further analysis and visualization will be performed using Python in a Jupyter N
 ### Next Steps
 
 - Partition the asthma_hospital_visits table to only include the counties we are looking at pollution data for as well as limit the time frame to 2015 since our pollution data is all from 2015
-- Join all PM2.5 pollution data tables to create PM_data
 - Join asthma_hospital_visits to the county column for CO_data and PM_data
-- 
-
+  
 
 
 ### Contributors:
