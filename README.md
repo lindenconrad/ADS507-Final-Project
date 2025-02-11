@@ -48,9 +48,10 @@ Further analysis and visualization will be performed using Python in a Jupyter N
 
 ### Next Steps
 
-- Partition the asthma_hospital_visits table to only include the counties we are looking at pollution data for
+- Partition the asthma_hospital_visits table to only include the counties we are looking at pollution data for as well as limit the time frame to 2015 since our pollution data is all from 2015
 - Join all PM2.5 pollution data tables to create PM_data
 - Join asthma_hospital_visits to the county column for CO_data and PM_data
+- 
 
 
 
