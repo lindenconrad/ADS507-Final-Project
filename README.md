@@ -23,7 +23,7 @@ The database consists of multiple tables containing pollution data and health da
 | SB_CO                               | PM2.5 pollution data for San Bernadino      |
 | SC_PM                               | CO pollution data for San Bernadion         |
 | CO_data                             | Combined tabled of all CO pollution data    |
-| PM_data                             | Combined tabled of all PM2.5 pollution data |
+| PM25_data                           | Combined tabled of all PM2.5 pollution data |
 | 'asthma-emergency-2015_2022'        | asthma ER visits                            |
 | 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations                     |
 
