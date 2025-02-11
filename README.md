@@ -12,25 +12,28 @@ These tables contain data related to air pollution levels, air quality index (AQ
 
 The database consists of multiple tables containing pollution data and health data:
 
-| Table Name                          | Description             |
-|-------------------------------------|-------------------------|
-| `ad_viz_plotval_data_1`             | PM2.5 pollution data    |
-| `ad_viz_plotval_data_2`             | CO pollution data       |
-| `ad_viz_plotval_data_4`             | PM2.5 pollution data    |
-| `ad_viz_plotval_data_10`            | CO pollution data       |
-| `ad_viz_plotval_data_11`    	      | PM2.5 pollution data    |
-| `ad_viz_plotval_data_6`             | CO pollution data       |
-| `ad_viz_plotval_data_8`             | PM2.5 pollution data    |
-| `ad_viz_plotval_data_9`             | CO pollution data       |
-| 'asthma-emergency-2015_2022'        | asthma ER visits        |
-| 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations |
+| Table Name                          | Description                                 |
+|-------------------------------------|---------------------------------------------|
+| LA_CO                               | PM2.5 pollution data for Los Angeles        |
+| LA_PM                               | CO pollution data for Los Angeles           |
+| SD_CO                               | PM2.5 pollution data for San Diego          |
+| SD_PM                               | CO pollution data for San Diego             |
+| OR_CO   	                          | PM2.5 pollution data for Orange             |
+| OR_PM                               | CO pollution data for Orange                |
+| SB_CO                               | PM2.5 pollution data for San Bernadino      |
+| SC_PM                               | CO pollution data for San Bernadion         |
+| CO_data                             | Combined tabled of all CO pollution data    |
+| PM_data                             | Combined tabled of all PM2.5 pollution data |
+| 'asthma-emergency-2015_2022'        | asthma ER visits                            |
+| 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations                     |
 
 The pollution data were combined into one table, health data combined into another table, and one final table was created.
 
+PM_data is in the process of being created. We are running into some issues with creating the new table and misaligning the number of columns. 
 
 ### Database: `air_quality_analysis`
 
-
+This database is held on an AZURE server with acess given to the contributers listed below.
 
 
 ### Data Processing and Analysis
@@ -45,7 +48,9 @@ Further analysis and visualization will be performed using Python in a Jupyter N
 
 ### Next Steps
 
-
+- Partition the asthma_hospital_visits table to only include the counties we are looking at pollution data for
+- Join all PM2.5 pollution data tables to create PM_data
+- Join asthma_hospital_visits to the county column for CO_data and PM_data
 
 
 
