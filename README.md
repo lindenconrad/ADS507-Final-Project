@@ -11,23 +11,23 @@ The project uses MySQL (hosted on Azure) for data storage and processing.
 These tables contain data related to air pollution levels, air quality index (AQI), and asthma-related emergency and hospitalization cases.
 
 The database consists of multiple tables containing pollution data and health data:
-
-| Table Name                          | Description                                 |
-|-------------------------------------|---------------------------------------------|
-| LA_CO                               | PM2.5 pollution data for Los Angeles        |
-| LA_PM                               | CO pollution data for Los Angeles           |
-| SD_CO                               | PM2.5 pollution data for San Diego          |
-| SD_PM                               | CO pollution data for San Diego             |
-| OR_CO   	                          | PM2.5 pollution data for Orange             |
-| OR_PM                               | CO pollution data for Orange                |
-| SB_CO                               | PM2.5 pollution data for San Bernadino      |
-| SC_PM                               | CO pollution data for San Bernadion         |
-| CO_data                             | Combined tabled of all CO pollution data    |
-| PM25_data                           | Combined tabled of all PM2.5 pollution data |
-| 'asthma-emergency-2015_2022'        | asthma ER visits                            |
-| 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations                     |
-
-The pollution data were combined into one table each, health data combined into another table, and one final table is in the process of being created.
+  
+| Table Name                          | Description                                     |
+|-------------------------------------|-------------------------------------------------|
+| LA_CO                               | PM2.5 pollution data for Los Angeles            |
+| LA_PM                               | CO pollution data for Los Angeles               |
+| SD_CO                               | PM2.5 pollution data for San Diego              |
+| SD_PM                               | CO pollution data for San Diego                 |
+| OR_CO   	                          | PM2.5 pollution data for Orange                 |
+| OR_PM                               | CO pollution data for Orange                    |
+| SB_CO                               | PM2.5 pollution data for San Bernadino          |
+| SC_PM                               | CO pollution data for San Bernadion             |
+| CO_data                             | Combined tabled of all CO pollution data        |
+| PM25_data                           | Combined tabled of all PM2.5 pollution data     |
+| 'asthma-emergency-2015_2022'        | asthma ER visits                                |
+| 'asthma-hospitalization-2015_2022'  | Asthma hospitalizations                         |
+| asthma_pollution                    | Asthma ER visits with avg pollution data        |
+| hospital_pollution                  | Asthma hospitalization with avg pollution data  |
 
 
 ### Database: `air_quality_analysis`
@@ -43,12 +43,14 @@ Queries were written to merge datasets and extract relevant insights.
 
 Further analysis and visualization will be performed using Python in a Jupyter Notebook environment.
 
+A Tableau dashboard has been created using the resources in this project.
+
 
 
 ### Next Steps
 
-- Partition the asthma_hospital_visits table to only include the counties we are looking at pollution data for as well as limit the time frame to 2015 since our pollution data is all from 2015
-- Join asthma_hospital_visits to the county column for CO_data and PM_data
+- Expand the database to include EPA pollution data from more years
+- Add traffic density data 
   
 
 
